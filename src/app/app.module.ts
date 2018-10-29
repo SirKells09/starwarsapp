@@ -3,14 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { StarwarsComponent } from './starwars/starwars.component';
+import { HttpClientModule } from '@angular/common/http'
+import { ReactiveFormsModule} from '@angular/forms'
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StarwarsComponent,
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

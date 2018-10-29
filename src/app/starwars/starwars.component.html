@@ -1,0 +1,21 @@
+<div >
+  
+  <form [formGroup]= "searchForm" (ngSubmit)="onCreateSearch()">
+    <select formControlName="type">
+        <option value="people">People</option>
+
+        <option value="starships">Starships</option>
+
+        <option value="films">Films</option>
+      </select>
+    
+
+          
+          <input type=text formControlName="search"/>
+          <button>submit</button>
+        </form>
+      
+      
+        
+      </div>
+      <div *ngIf='results'>{{results.results | json}}</div>
